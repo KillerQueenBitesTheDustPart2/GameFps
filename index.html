@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<title>Mobile FPS Prototype (Sunset)</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="game-root">
+  <canvas id="c"></canvas>
+
+  <!-- UI -->
+  <div id="hud">
+    <div id="topbar">
+      <div id="score">Score: <span id="scoreVal">0</span></div>
+      <div id="timer">Time: <span id="timeVal">60</span>s</div>
+      <div id="health">HP: <span id="hpVal">100</span></div>
+    </div>
+
+    <!-- left: joystick area -->
+    <div id="leftTouch" class="touchArea">
+      <div id="joystickBase"><div id="joystickThumb"></div></div>
+    </div>
+
+    <!-- right: look area -->
+    <div id="rightTouch" class="touchArea"></div>
+
+    <!-- Buttons -->
+    <div id="buttons">
+      <button id="btnAim" class="btn">ADS</button>
+      <button id="btnShoot" class="btn">Shoot</button>
+      <button id="btnReload" class="btn">Reload</button>
+      <button id="btnJump" class="btn">Jump</button>
+      <button id="btnSprint" class="btn">Sprint</button>
+    </div>
+
+    <!-- scope overlay -->
+    <div id="scope" hidden>
+      <div id="reticle"></div>
+    </div>
+
+    <div id="message"></div>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
